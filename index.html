@@ -4,78 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuizTime</title>
- 
+
     <!-- Reset CSS -->
-    <link rel="stylesheet" type="text/css" href=".assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href=".assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     
     
     
-
-    
-</head>
-<body>
-    <header class="d-flex p-3 justify-content-between font-weight-bolder">
-        <button type="button" id="view-scores-id" class="btn score text-success font-weight-bolder shadow-xl p-2">View 
-            Highscores</button>
-        <div class="timer text-muted">Time: <span id="count">0</span></div>
-    </header>
-
-   <!--Main-->
-
-   <main class="container d-flex justify-content-center flex-column">
-
-    <section id="welcome-modal" class="justify-content-center">
-
-       <article class="text-center">
-        <h1 class ="text-success">Welcome to Javascript Quiz!</h1>
-        <p class="text-justify text-muted mt-5 text-center">Once you click the start button you will be presented
-            with a series of multiple choice questions. </p>
-        <p class="text-justify text-muted text-center">You have 60 Seconds to finish.
-            For every wrong answer you choose time will be deducted from the (picture of clock)
-        </p>        
-         <div class="text-muted font-weight-bolder font-italic">Try to beat the high score!</div>
-       <button type="button" id="start" class="btn btn-success mt-5 px-5">Start Quiz</button>
-     </article>
-    </section>
-
-   <!-- show hide questions -->
-   <section class="card text-center shadow-lg d-none" id="modal-done">
-      <div class="mb-5 card-header shadow-sm">
-        <h1 class="text-info mb-2">All Done</h1>
-        <p class="text-muted font-weight-bolder font-italic text-card">Your final score is: <span 
-            id="finalscore" class="badge badfe-info text-wrap shadow-xl"></span>
-            </p>
-      </div>
-    
-    <form class="card-body" onsubmit="return false">
-        <div class="form-inline">
-            <label for="initials" class="mr-1 text-muted font-weight-bold">Enter your initials here: </label>
-            <input type="text" class="form-control" id="initials" placeholder="Initials here">
-            <button type="button" id="submit" class="btn btn-info px-4 ml-2">Submit</button>
-        </div>
-    </form>
-    </section>
-
-    <!-- show highscores -->
-    <section class="card d-none flex-column m-auto p-5 shadow-lg" id="highscoresPage">
-        <h3 class="card-title m-auto pb-4">Highscores</h3>
-        <div id="scores-list">
-        </div>
-        <div class="form mt-3 d-flex">
-            <button type="button" id="sumitGoBack" class="btn btn-info">Go back</button>
-            <button type="button" id="submitClear" class="btn btn-info ml-2">Clear Highscores</button>
-        </div>
-    </section>
-
-    </main>
-
-    <script type="text/javascript" src="./assets/js/script.js"></script>
-    
-</body>
 </html>
+    <body>
+        <header class="d-flex p-3 justify-content-between fw-bold">
+            <button type="button" id="view-scores-id" class="btn score text-success fw-bold shadow-lg p-2">View 
+                Highscores</button>
+            <div class="timer text-muted">Time: <span id="count">0</span></div>
+        </header>
+    
+       <!--Main-->
+    
+       <main class="container d-flex justify-content-center flex-column">
+    
+        <section id="welcome-modal" class="justify-content-center"> 
+    
+           <article class="text-center">
+            <h1 class="text-success">Welcome to Javascript Quiz!</h1>
+            <p class="mt-5 text-center text-muted">Once you click the start button, you will be presented
+                with a series of multiple choice questions.</p>
+            <p class="text-center text-muted">You have 60 Seconds to finish.
+                For every wrong answer, time will be deducted from the clock.</p>        
+             <div class="text-muted fw-bold fst-italic">Tr  y to beat the high score!</div>
+           <button type="button" id="start" class="btn btn-success mt-5 px-5">Start Quiz</button>
+         </article>
+        </section>
+    
+        <section class="d-flex flex-column align-items-center text-center" id="modal-section" hidden>
+            <div class="question-modal questions-style">
+            </div>
+            <div class="options-modal">
+            </div>
+            <div class="hit"></div>
+        </section>
+    
+       <section class="card text-center shadow-lg d-none" id="modal-done">
+          <div class="mb-5 card-header shadow-sm">
+            <h1 class="text-success mb-2">All Done</h1>
+            <p class="text-muted fw-bold fst-italic">Your final score is: <span 
+                id="finalscore" class="bg-info text-wrap shadow-lg"></span>
+                </p>
+          </div>
+          <form class="d-flex flex-row align-items-center">
+            <label for="initials" class="me-2 text-muted fw-bold">Enter your initials here: </label>
+            <input type="text" class="form-control me-2" id="initials" placeholder="Initials here">
+            <button type="button" id="submit" class="btn btn-info">Submit</button>
+        </form>
+        </section>
+    
+        <section class="card d-none d-flex flex-column mx-auto p-5 shadow-lg" id="highscoresPage">
+            <h3 class="card-title mx-auto pb-4">Highscores</h3>
+            <div id="scores-list">
+            </div>
+            <div class="d-flex mt-3">
+                <button type="button" id="submitGoback" class="btn btn-info">Go back</button>
+                <button type="button" id="submitClear" class="btn btn-info ms-2">Clear Highscores</button>
+            </div>
+        </section>
+    
+        </main>
+    
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        
+    </body>
+    </html>
