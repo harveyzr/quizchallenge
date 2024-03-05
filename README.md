@@ -38,13 +38,14 @@ The main goal of this application is to use the skills we learned in class to cr
 - WHEN the game is over
 - THEN I can save my initials and score
  ## Images
-![Website Preview](assets/img/Screenshot%20Quiz.jpg)
-
+![Website Preview](assets/img/quiz%20gif.gif)
+ 
  ## Link to Deployed Webpage
 https://harveyzr.github.io/quizchallenge/
  
 ## Link to GetHub Website
 https://github.com/harveyzr/quizchallenge
+
 
  ## Skills Used
 - JavaScript
