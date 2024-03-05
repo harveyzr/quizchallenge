@@ -44,7 +44,7 @@ The main goal of this application is to use the skills we learned in class to cr
 https://harveyzr.github.io/pass-gen/
  
 ## Link to GetHub Website
-https://github.com/harveyzr/pass-gen
+https://github.com/harveyzr/quizchallenge
 
  ## Skills Used
 - JavaScript
