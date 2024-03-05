@@ -41,7 +41,7 @@ The main goal of this application is to use the skills we learned in class to cr
 ![Website Preview](assets/img/Screenshot%20Quiz.jpg)
 
  ## Link to Deployed Webpage
-https://harveyzr.github.io/pass-gen/
+https://harveyzr.github.io/quizchallenge/
  
 ## Link to GetHub Website
 https://github.com/harveyzr/quizchallenge
