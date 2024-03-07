@@ -229,7 +229,7 @@ function saveInitialScore() {
 		initialValue.toLowerCase().match(/^[a-z]+$/)
 	) {
 		highscoreList.push({ initials: initialValue, score: score });
-		localStorage.setItem("userHighScores", JSON.stringify(highscoreList));
+		localStorage.setItem("highscoreList", JSON.stringify(highscoreList));
 
 		//clean the page before highscores display page
 		completionModal.classList.add("d-none");
