@@ -115,7 +115,7 @@ function startQuiz() {
 	indexArray = 0;
 	score = 0;
 	inProgress = true;
-	timer = 60;
+	timer = 10;
 	highscoresButton.setAttribute("disabled", "true");
 
 	quizTimer();
@@ -176,7 +176,7 @@ function timeDelayCorrect() {
 	indexArray++;
 	cleanPage();
 	answerFeedback.classList.add("mt-4");
-	answerFeedback.textContent = "Rigth Answer!";
+	answerFeedback.textContent = "Right Answer!";
 	showPage();
 }
 
