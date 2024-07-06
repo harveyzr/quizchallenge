@@ -108,7 +108,7 @@ var highscoresButton = document.querySelector("#alpha-btn");
 var hitShow = document.querySelector(".hit")
 
 /**
- * start the quiz
+	 * start the quiz
  */
 function startQuiz() {
 	//reset quiz variables
