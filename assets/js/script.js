@@ -115,7 +115,7 @@ function startQuiz() {
 	indexArray = 0;
 	score = 0;
 	inProgress = true;
-	timer = 10;
+	timer = 60;
 	highscoresButton.setAttribute("disabled", "true");
 
 	quizTimer();
